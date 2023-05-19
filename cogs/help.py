@@ -43,8 +43,18 @@ class Help(commands.Cog):
             inline=True
         )
         embed.add_field(
+            name='/districts',
+            value='Returns online districts with population information',
+            inline=False
+        )
+        embed.add_field(
             name='/help',
             value='Returns this message',
+            inline=False
+        )
+        embed.add_field(
+            name='/invasions',
+            value='Returns a list of current invasions',
             inline=False
         )
         embed.add_field(
