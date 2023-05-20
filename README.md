@@ -7,6 +7,9 @@
 * **Ping** - Allows users to ping the bot and receive the bot's latency in milliseconds.
 
 ### Changelog
+* **0.4.1** (*20MAY*)
+  * Improved `/districts` and `/invasions` to allow for search terms!
+  * Both queries allow for searching for a specific district.  `/invasions` allows you to search by cog as well!
 * **0.4.0** (*20MAY*)
   * Built the `/game` command which provides macro-information about the game, including whether the game is running and toons online!
 * **0.3.0** (*20MAY*)

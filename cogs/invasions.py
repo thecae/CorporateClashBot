@@ -13,7 +13,7 @@ class Invasions(commands.Cog):
         print('* Invasions cog is online.')
 
     @commands.command()
-    async def invasions(self, ctx):
+    async def invasions(self, ctx, *, search_term=None):
         api_response = requests.get('https://corporateclash.net/api/v1/districts.js').json()
         api_response = sorted(api_response, key=lambda k: k['name'])
         embed = discord.Embed(
@@ -23,7 +23,9 @@ class Invasions(commands.Cog):
         )
         one_invasion = False
         for district in api_response:
-            if district['invasion_online']:
+            if district['invasion_online'] and (
+                    search_term is None or search_term.lower() == district['name'].lower() or search_term.lower() ==
+                    district['cogs_attacking'].lower()):
                 one_invasion = True
                 embed.add_field(
                     name=f'{district["name"]}',
@@ -31,11 +33,18 @@ class Invasions(commands.Cog):
                     inline=False
                 )
         if not one_invasion:
-            embed.add_field(
-                name='No invasions!',
-                value='No invasions are currently active.',
-                inline=False
-            )
+            if search_term is None:
+                embed.add_field(
+                    name='No invasions!',
+                    value='No invasions are currently active.',
+                    inline=False
+                )
+            else:
+                embed.add_field(
+                    name='No invasions found!',
+                    value=f'No invasions were found for {search_term}.',
+                    inline=False
+                )
         embed.set_footer(text=f'Queried at {datetime.now().strftime("%H:%M:%S")}.')
         await ctx.send(embed=embed)
 
