@@ -68,6 +68,11 @@ class Help(commands.Cog):
             inline=False
         )
         embed.add_field(
+            name='/npc',
+            value='Returns information about a specified NPC',
+            inline=False
+        )
+        embed.add_field(
             name='/invasions',
             value='Returns a list of current invasions',
             inline=False

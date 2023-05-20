@@ -9,9 +9,13 @@
 * **Help** - Displays the help page for the bot with command descriptions
 * **Invasions** - Displays information about the active invasions in the game.
 * **News** - Displays the latest news from the TTCC website.
+* **NPC** - Displays information about a specific NPC.
 * **Ping** - Allows users to ping the bot and receive the bot's latency in milliseconds.
 
 ### Changelog
+* **0.6.0** (*20MAY*)
+  * NPC Support! `/npc <npc name>` provides information about various NPC's.  Unfortunately, this database is limited to whether the NPC has a wiki article about them.
+  * Modified `/cog` to concatenate exe and regular cogs into one branch.  Gets rid of a lot of repetitive code for a very simple change.
 * **0.5.0** (*20MAY*)
   * We now support a `/cog` command that can provide information about any cog! Format the command `/cog <cog name>`.  The command should be case-insensitive and supports acronyms of the bosses (VP, CFO,...).
   * Currently the code for this functionality isn't the best due to various exceptions that are made in the Clash Wiki databse.  This has caused a good bit of repeat code that in the future I would like to remove.

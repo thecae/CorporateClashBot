@@ -53,38 +53,11 @@ def parse_cog(search_term):
 
     try:
         # get information about the cog
-        position = page.find('div', {'data-source': 'position'}).find('a').text
-        department = page.find('div', {'data-source': 'department'}).find('a').text
-        image = page.find('img', {'class': 'pi-image-thumbnail'})['src']
-        lowest_level = page.find('td', {'data-source': 'lowest_level'}).text
-        highest_level = page.find('td', {'data-source': 'highest_level'}).text
-        lowest_damage = page.find('td', {'data-source': 'lowest_damage'}).text
-        highest_damage = page.find('td', {'data-source': 'highest_damage'}).text
-
-        # build the embed
-        embed = discord.Embed(
-            title=f'{search_term.title()}',
-            description=f'*{position}, {department}*',
-            color=discord.Color.blue()
-        )
-        embed.set_thumbnail(url=image)
-        embed.add_field(name='Lowest Level', value=lowest_level, inline=True)
-        embed.add_field(name='Highest Level', value=highest_level, inline=True)
-        embed.add_field(name='Lowest Dmg.', value=lowest_damage, inline=False)
-        embed.add_field(name='Highest Dmg.', value=highest_damage, inline=True)
-        return embed
-    except AttributeError:
-        raise AttributeError
-
-def parse_exe(search_term):
-    # cogs follow Title_Case for their search term
-    url_term = search_term.title().replace(' ', '_')
-    url = f'https://toontown-corporate-clash.fandom.com/wiki/{url_term}'
-    page = BeautifulSoup(requests.get(url).content, 'html.parser')
-
-    try:
-        # get information about the cog
-        position = page.find('div', {'data-source': 'position'}).find('div').text
+        try:
+            position = page.find('div', {'data-source': 'position'}).find('a').text
+        except AttributeError:
+            # if here, the cog is an exe. Their formatting is slightly different for position
+            position = page.find('div', {'data-source': 'position'}).find('div').text
         department = page.find('div', {'data-source': 'department'}).find('a').text
         image = page.find('img', {'class': 'pi-image-thumbnail'})['src']
         lowest_level = page.find('td', {'data-source': 'lowest_level'}).text
@@ -197,13 +170,6 @@ class Cog(commands.Cog):
             await ctx.send(embed=embed)
             return
         except (LookupError, AttributeError):
-            pass
-        # try parsing it as an exe
-        try:
-            embed = parse_exe(search_term)
-            await ctx.send(embed=embed)
-            return
-        except AttributeError:
             pass
         # try parsing it as a cog
         try:
