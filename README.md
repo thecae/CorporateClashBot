@@ -3,7 +3,12 @@
 
 ### Current Feature Set
 * **About** - Displays the about page for the bot
+* **Cog** - Displays information about a specific cog.
+* **Districts** - Displays information about the online districts in the game.
+* **Game** - Displays information about the game, including whether the game is running and how many toons are online.
 * **Help** - Displays the help page for the bot with command descriptions
+* **Invasions** - Displays information about the active invasions in the game.
+* **News** - Displays the latest news from the TTCC website.
 * **Ping** - Allows users to ping the bot and receive the bot's latency in milliseconds.
 
 ### Changelog
