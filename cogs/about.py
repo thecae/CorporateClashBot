@@ -31,7 +31,7 @@ class AboutMe(commands.Cog):
         embed.set_author(name='Lord Lowden Clear', icon_url='https://cdn.discordapp.com/attachments/733788698277052438/1109257208442658816/lord-lowden.png')
         embed.add_field(name='My prefix:', value='\"`/`\"', inline=True)
         embed.add_field(name='Need help?', value='Type `/help` for assistance!', inline=True)
-        embed.add_field(name='List of Commands', value='* districts\n * invasions\n * news\n * ping', inline=False)
+        embed.add_field(name='List of Commands', value='* districts\n * game\n * invasions\n * news\n * ping', inline=False)
 
         await ctx.send(embed=embed)
 

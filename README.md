@@ -7,6 +7,8 @@
 * **Ping** - Allows users to ping the bot and receive the bot's latency in milliseconds.
 
 ### Changelog
+* **0.4.0** (*20MAY*)
+  * Built the `/game` command which provides macro-information about the game, including whether the game is running and toons online!
 * **0.3.0** (*20MAY*)
   * We support news now! Use `/news` to get the latest news from the TTCC website.
 * **0.2.0** (*20MAY*)

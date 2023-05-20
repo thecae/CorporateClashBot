@@ -48,6 +48,11 @@ class Help(commands.Cog):
             inline=False
         )
         embed.add_field(
+            name='/game',
+            value='Returns the current status of the ToonTown Corporate Clash servers',
+            inline=False
+        )
+        embed.add_field(
             name='/help',
             value='Returns this message',
             inline=False
