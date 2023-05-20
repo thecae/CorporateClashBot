@@ -53,6 +53,11 @@ class Help(commands.Cog):
             inline=False
         )
         embed.add_field(
+            name='/news',
+            value='Returns the latest news from the ToonTown Corporate Clash team',
+            inline=False
+        )
+        embed.add_field(
             name='/invasions',
             value='Returns a list of current invasions',
             inline=False

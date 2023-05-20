@@ -7,6 +7,8 @@
 * **Ping** - Allows users to ping the bot and receive the bot's latency in milliseconds.
 
 ### Changelog
+* **0.3.0** (*20MAY*)
+  * We support news now! Use `/news` to get the latest news from the TTCC website.
 * **0.2.0** (*20MAY*)
   * Our first update with real-time TTCC information!
   * Implemented both the `/districts` and `/invasions` commands, which provide information about online districts and active invasions, respectively.
