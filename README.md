@@ -7,6 +7,8 @@
 * **Ping** - Allows users to ping the bot and receive the bot's latency in milliseconds.
 
 ### Changelog
+* **0.4.2** (*20MAY*)
+  * Bug fixes for `/about` command
 * **0.4.1** (*20MAY*)
   * Improved `/districts` and `/invasions` to allow for search terms!
   * Both queries allow for searching for a specific district.  `/invasions` allows you to search by cog as well!
