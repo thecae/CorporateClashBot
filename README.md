@@ -7,6 +7,9 @@
 * **Ping** - Allows users to ping the bot and receive the bot's latency in milliseconds.
 
 ### Changelog
+* **0.5.0** (*20MAY*)
+  * We now support a `/cog` command that can provide information about any cog! Format the command `/cog <cog name>`.  The command should be case-insensitive and supports acronyms of the bosses (VP, CFO,...).
+  * Currently the code for this functionality isn't the best due to various exceptions that are made in the Clash Wiki databse.  This has caused a good bit of repeat code that in the future I would like to remove.
 * **0.4.2** (*20MAY*)
   * Bug fixes for `/about` command
 * **0.4.1** (*20MAY*)

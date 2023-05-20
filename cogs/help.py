@@ -43,6 +43,11 @@ class Help(commands.Cog):
             inline=True
         )
         embed.add_field(
+            name='/cog',
+            value='Returns information about a specified cog',
+            inline=False
+        )
+        embed.add_field(
             name='/districts',
             value='Returns online districts with population information',
             inline=False
