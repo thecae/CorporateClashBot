@@ -11,14 +11,21 @@
 * **News** - Displays the latest news from the TTCC website.
 * **NPC** - Displays information about a specific NPC.
 * **Ping** - Allows users to ping the bot and receive the bot's latency in milliseconds.
+* **Playground** - Displays information about a specific playground.
+* **Street** - Displays information about a specific street.
 
 ### Changelog
+* **0.7.0** (*21MAY*)
+  * Bringing street data to the bot! `/street <street name>` provides information about a specific street.
+  * Bringing playground data to the bot! `/playground <playground name>` provides information about a specific playground.
+  * All street data is localized and won't automatically update if changes are made to information such as cog levels, .exe percentage, and the suit distributions.  Hoping to fix this in the future, just having trouble with processing the request!
+  * Made some formatting updates to `/cog` with newlines.
 * **0.6.0** (*20MAY*)
   * NPC Support! `/npc <npc name>` provides information about various NPC's.  Unfortunately, this database is limited to whether the NPC has a wiki article about them.
   * Modified `/cog` to concatenate exe and regular cogs into one branch.  Gets rid of a lot of repetitive code for a very simple change.
 * **0.5.0** (*20MAY*)
   * We now support a `/cog` command that can provide information about any cog! Format the command `/cog <cog name>`.  The command should be case-insensitive and supports acronyms of the bosses (VP, CFO,...).
-  * Currently the code for this functionality isn't the best due to various exceptions that are made in the Clash Wiki databse.  This has caused a good bit of repeat code that in the future I would like to remove.
+  * Currently, the code for this functionality isn't the best due to various exceptions that are made in the Clash Wiki databse.  This has caused a good bit of repeat code that in the future I would like to remove.
 * **0.4.2** (*20MAY*)
   * Bug fixes for `/about` command
 * **0.4.1** (*20MAY*)
@@ -34,6 +41,6 @@
   * My goal is to make full use of each API before moving on to new API requests.
 * **0.1.0** (*20MAY*)
   * Initial Commit to GitHub
-  * This commit contains the shell of the bot, plus working **ping** command.
+  * This commit contains the shell of the bot, plus working `/ping` command.
 
 *Bot Name: `LordLowdenClear#2417`*

@@ -82,6 +82,16 @@ class Help(commands.Cog):
             value='Returns the bot\'s latency',
             inline=False
         )
+        embed.add_field(
+            name='/playground',
+            value='Returns information about a specified playground',
+            inline=False
+        )
+        embed.add_field(
+            name='/street',
+            value='Returns information about a specified street',
+            inline=False
+        )
         await ctx.send(embed=embed)
 
 

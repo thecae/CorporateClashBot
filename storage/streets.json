@@ -1,0 +1,302 @@
+[
+  {
+    "Loopy Lane": {
+      "Playground": ["Toontown Central", "ttc"],
+      "Connects": "Alto Avenue, Mezzo Melodyland",
+      "Levels": "1 - 4",
+      "ExeChance": "5%",
+      "Percentages": ["5%", "5%", "40%", "30%", "20%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/2/2f/Map-ttc-loopy_lane.png/revision/latest/scale-to-width-down/150?cb=20230323222031"
+    }
+  },
+  {
+    "Punchline Place": {
+      "Playground": ["Toontown Central", "ttc"],
+      "Connects": "Buccaneer Boulevard, Barnacle Boatyard",
+      "Levels": "1 - 4",
+      "ExeChance": "5%",
+      "Percentages": ["40%", "40%", "5%", "5%", "10%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/3/3d/Map-ttc-punchline_place.png/revision/latest/scale-to-width-down/150?cb=20230323222102"
+    }
+  },
+  {
+    "Silly Street": {
+      "Playground": ["Toontown Central", "ttc"],
+      "Connects": "Noble Nook, Ye Olde Toontowne",
+      "Levels": "1 - 3",
+      "ExeChance": "10%",
+      "Percentages": ["20%", "20%", "20%", "20%", "20%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/d/d7/Map-ttc-silly_street.png/revision/latest/scale-to-width-down/150?cb=20230323222132"
+    }
+  },
+  {
+    "Wacky Way": {
+      "Playground": ["Toontown Central", "ttc"],
+      "Connects": "Daisy Drive, Daffodil Gardens",
+      "Levels": "1 - 4",
+      "ExeChance": "5%",
+      "Percentages": ["5%", "5%", "20%", "30%", "40%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/3/32/Map-ttc-wacky_way.png/revision/latest/scale-to-width-down/150?cb=20230323222212"
+    }
+  },
+  {
+    "Anchor Avenue": {
+      "Playground": ["Barnacle Boatyard", "bb"],
+      "Connects": "Dead-End",
+      "Levels": "2 - 5",
+      "ExeChance": "10%",
+      "Percentages": ["55%", "0%", "0%", "35%", "10%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/a/a8/Map-bb-anchor_avenue.png/revision/latest/scale-to-width-down/150?cb=20230323222319"
+    }
+  },
+  {
+    "Buccaneer Boulevard": {
+      "Playground": ["Barnacle Boatyard", "bb"],
+      "Connects": "Punchline Place, Toontown Central",
+      "Levels": "2 - 5",
+      "ExeChance": "7.5%",
+      "Percentages": ["0%", "0%", "10%", "80%", "10%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/3/38/Map-bb-buccaneer_boulevard.png/revision/latest/scale-to-width-down/150?cb=20230323222353"
+    }
+  },
+  {
+    "Lighthouse Lane": {
+      "Playground": ["Barnacle Boatyard", "bb"],
+      "Connects": "Walrus Way, The Brrrgh",
+      "Levels": "2 - 5",
+      "ExeChance": "15%",
+      "Percentages": ["5%", "5%", "35%", "0%", "55%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/8/87/Map-bb-lighthouse_lane.png/revision/latest/scale-to-width-down/150?cb=20230323222417"
+    }
+  },
+  {
+    "Seaweed Street": {
+      "Playground": ["Barnacle Boatyard", "bb"],
+      "Connects": "Peanut Place, Acorn Acres",
+      "Levels": "2 - 5",
+      "ExeChance": "10%",
+      "Percentages": ["30%", "60%", "10%", "0%", "0%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/8/86/Map-bb-seaweed_street.png/revision/latest/scale-to-width-down/150?cb=20230323222512"
+    }
+  },
+  {
+    "Knight Knoll": {
+      "Playground": ["Ye Olde Toontowne", "yott"],
+      "Connects": "Petunia Place, Daffodil Gardens",
+      "Levels": "3 - 6",
+      "ExeChance": "10%",
+      "Percentages": ["45%", "45%", "5%", "5%", "0%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/e/eb/Map-yott-knight_knoll.png/revision/latest/scale-to-width-down/150?cb=20230323222614"
+    }
+  },
+  {
+    "Noble Nook": {
+      "Playground": ["Ye Olde Toontowne", "yott"],
+      "Connects": "Silly Street, Toontown Central",
+      "Levels": "3 - 5",
+      "ExeChance": "10%",
+      "Percentages": ["0%", "0%", "10%", "40%", "50%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/d/d9/Map-yott-noble_nook.png/revision/latest/scale-to-width-down/150?cb=20230323222641"
+    }
+  },
+  {
+    "Wizard Way": {
+      "Playground": ["Ye Olde Toontowne", "yott"],
+      "Connects": "Dead-End",
+      "Levels": "3 - 6",
+      "ExeChance": "12.5%",
+      "Percentages": ["5%", "5%", "70%", "20%", "0%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/d/dd/Map-yott-wizard_way.png/revision/latest/scale-to-width-down/150?cb=20230323222705"
+    }
+  },
+  {
+    "Daisy Drive": {
+      "Playground": ["Daffodil Gardens", "dg"],
+      "Connects": "Wacky Way, Toontown Central",
+      "Levels": "4 - 6",
+      "ExeChance": "10%",
+      "Percentages": ["10%", "10%", "0%", "15%", "65%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/4/40/Map-dg-daisy_drive.png/revision/latest/scale-to-width-down/150?cb=20230323222755"
+    }
+  },
+  {
+    "Petunia Place": {
+      "Playground": ["Daffodil Gardens", "dg"],
+      "Connects": "Knight Knoll, Ye Olde Toontowne",
+      "Levels": "4 - 7",
+      "ExeChance": "7.5%",
+      "Percentages": ["5%", "50%", "45%", "0%", "0%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/7/75/Map-dg-petunia_place.png/revision/latest/scale-to-width-down/150?cb=20230323222817"
+    }
+  },
+  {
+    "Sunflower Street": {
+      "Playground": ["Daffodil Gardens", "dg"],
+      "Connects": "Legume Lane, Acorn Acres",
+      "Levels": "4 - 7",
+      "ExeChance": "10%",
+      "Percentages": ["10%", "10%", "10%", "60%", "10%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/c/c4/Map-dg-sunflower_street.png/revision/latest/scale-to-width-down/150?cb=20230323223155"
+    }
+  },
+  {
+    "Tulip Terrace": {
+      "Playground": ["Daffodil Gardens", "dg"],
+      "Connects": "Sellbot Headquarters",
+      "Levels": "5 - 7",
+      "ExeChance": "15%",
+      "Percentages": ["80%", "5%", "5%", "5%", "5%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/e/e4/Map-dg-tulip_terrace.png/revision/latest/scale-to-width-down/150?cb=20230323223235"
+    }
+  },
+  {
+    "Alto Avenue": {
+      "Playground": ["Mezzo Melodyland", "mml"],
+      "Connects": "Loopy Lane, Toontown Central",
+      "Levels": "4 - 7",
+      "ExeChance": "7.5%",
+      "Percentages": ["50%", "25%", "0%", "0%", "25%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/8/84/Map-mml-alto_avenue.png/revision/latest/scale-to-width-down/150?cb=20230323223437"
+    }
+  },
+  {
+    "Baritone Boulevard": {
+      "Playground": ["Mezzo Melodyland", "mml"],
+      "Connects": "Sleet Street, The Brrrgh",
+      "Levels": "5 - 8",
+      "ExeChance": "10%",
+      "Percentages": ["10%", "40%", "0%", "0%", "50%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/3/36/Map-mml-baritone_boulevard.png/revision/latest/scale-to-width-down/150?cb=20230323223503"
+    }
+  },
+  {
+    "Soprano Street": {
+      "Playground": ["Mezzo Melodyland", "mml"],
+      "Connects": "Cashbot Headquarters",
+      "Levels": "6 - 8",
+      "ExeChance": "25%",
+      "Percentages": ["5%", "80%", "5%", "5%", "5%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/1/16/Map-mml-soprano_street.png/revision/latest/scale-to-width-down/150?cb=20230323223527"
+    }
+  },
+  {
+    "Tenor Terrace": {
+      "Playground": ["Mezzo Melodyland", "mml"],
+      "Connects": "Lullaby Lane, Drowzy Dreamland",
+      "Levels": "5 - 8",
+      "ExeChance": "15%",
+      "Percentages": ["0%", "0%", "40%", "40%", "20%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/b/ba/Map-mml-tenor_terrace.png/revision/latest/scale-to-width-down/150?cb=20230323223607"
+    }
+  },
+  {
+    "Arctic Avenue": {
+      "Playground": ["The Brrrgh", "tb"],
+      "Connects": "Pajama Place, Drowzy Dreamland",
+      "Levels": "6 - 9",
+      "ExeChance": "25",
+      "Percentages": ["10%", "5%", "5%", "10%", "70%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/1/14/Map-tb-arctic_avenue.png/revision/latest/scale-to-width-down/150?cb=20230323224310"
+    }
+  },
+  {
+    "Polar Place": {
+      "Playground": ["The Brrrgh", "tb"],
+      "Connects": "Lawbot Headquarters",
+      "Levels": "7 - 9",
+      "ExeChance": "25",
+      "Percentages": ["5%", "5%", "80%", "5%", "5%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/9/9d/Map-tb-polar_place.png/revision/latest/scale-to-width-down/150?cb=20230323224348"
+    }
+  },
+  {
+    "Sleet Street": {
+      "Playground": ["The Brrrgh", "tb"],
+      "Connects": "Baritone Boulevard, Mezzo Melodyland",
+      "Levels": "6 - 9",
+      "ExeChance": "20",
+      "Percentages": ["60%", "30%", "0%", "0%", "10%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/b/b1/Map-tb-sleet_street.png/revision/latest/scale-to-width-down/150?cb=20230323224520"
+    }
+  },
+  {
+    "Walrus Way": {
+      "Playground": ["The Brrrgh", "tb"],
+      "Connects": "Lighthouse Lane, Barnacle Boatyard",
+      "Levels": "6 - 8",
+      "ExeChance": "20",
+      "Percentages": ["0%", "0%", "5%", "75%", "20%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/a/a2/Map-tb-walrus_way.png/revision/latest/scale-to-width-down/150?cb=20230323224540"
+    }
+  },
+  {
+    "Almond Avenue": {
+      "Playground": ["Acorn Acres", "aa"],
+      "Connects": "Dead-End",
+      "Levels": "7 - 10",
+      "ExeChance": "20%",
+      "Percentages": ["20%", "10%", "10%", "10%", "50%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/9/96/Acorn_ave_overview.png/revision/latest/scale-to-width-down/180?cb=20230323224856"
+    }
+  },
+  {
+    "Legume Lane": {
+      "Playground": ["Acorn Acres", "aa"],
+      "Connects": "Sunflower Street, Daffodil Gardens",
+      "Levels": "7 - 10",
+      "ExeChance": "20%",
+      "Percentages": ["0%", "40%", "40%", "20%", "%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/a/aa/Acorn_acres_6400.png/revision/latest/scale-to-width-down/180?cb=20230323224800"
+    }
+  },
+  {
+    "Peanut Place": {
+      "Playground": ["Acorn Acres", "aa"],
+      "Connects": "Seaweed Street, Barnacle Boatyard",
+      "Levels": "7 - 10",
+      "ExeChance": "20%",
+      "Percentages": ["30%", "30%", "30%", "0%", "10%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/0/00/Acornacres6200.png/revision/latest/scale-to-width-down/180?cb=20230323224642"
+    }
+  },
+  {
+    "Walnut Way": {
+      "Playground": ["Acorn Acres", "aa"],
+      "Connects": "Bossbot Headquarters",
+      "Levels": "8 - 10",
+      "ExeChance": "20%",
+      "Percentages": ["5%", "5%", "5%", "80%", "5%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/6/68/Map-aa-walnut_way.png/revision/latest/scale-to-width-down/180?cb=20230323224717"
+    }
+  },
+  {
+    "Lullaby Lane": {
+      "Playground": ["Drowsy Dreamland", "dd"],
+      "Connects": "Tenor Terrace, Mezzo Melodyland",
+      "Levels": "8 - 10",
+      "ExeChance": "25%",
+      "Percentages": ["40%", "40%", "5%", "5%", "10%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/a/ac/Map-ddl-lullaby_lane.png/revision/latest/scale-to-width-down/150?cb=20230323225045"
+    }
+  },
+  {
+    "Pajama Place": {
+      "Playground": ["Drowsy Dreamland", "dd"],
+      "Connects": "Arctic Avenue, The Brrrgh",
+      "Levels": "8 - 11",
+      "ExeChance": "25%",
+      "Percentages": ["5%", "5%", "40%", "40%", "10%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/d/d0/Map-ddl-pajama_place.png/revision/latest/scale-to-width-down/150?cb=20230323225017"
+    }
+  },
+  {
+    "Twilight Terrace": {
+      "Playground": ["Drowsy Dreamland", "dd"],
+      "Connects": "Boardbot Headquarters",
+      "Levels": "8 - 11",
+      "ExeChance": "30%",
+      "Percentages": ["5%", "5%", "5%", "5%", "80%"],
+      "Source": "https://static.wikia.nocookie.net/toontown-corporate-clash/images/0/0e/Map-ddl-twilight_terrace.png/revision/latest/scale-to-width-down/180?cb=20230323224950"
+    }
+  }
+]

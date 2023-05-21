@@ -74,7 +74,8 @@ def parse_cog(search_term):
         embed.set_thumbnail(url=image)
         embed.add_field(name='Lowest Level', value=lowest_level, inline=True)
         embed.add_field(name='Highest Level', value=highest_level, inline=True)
-        embed.add_field(name='Lowest Dmg.', value=lowest_damage, inline=False)
+        embed.add_field(name='\u200b', value='\u200b')
+        embed.add_field(name='Lowest Dmg.', value=lowest_damage, inline=True)
         embed.add_field(name='Highest Dmg.', value=highest_damage, inline=True)
         return embed
     except AttributeError:
@@ -104,9 +105,10 @@ def parse_mgr(search_term):
             color=discord.Color.blue()
         )
         embed.set_thumbnail(url=image)
-        embed.add_field(name='Health', value=health, inline=True)
         embed.add_field(name='Level', value=level, inline=True)
+        embed.add_field(name='Health', value=health, inline=True)
         embed.add_field(name='Defense', value=defense, inline=True)
+        embed.add_field(name='\u200b', value='\u200b')
         embed.add_field(name='Lowest Damage', value=lowest_damage, inline=True)
         embed.add_field(name='Highest Damage', value=highest_damage, inline=True)
         return embed
@@ -136,10 +138,12 @@ def parse_highroller():
             color=discord.Color.blue()
         )
         embed.set_thumbnail(url=image)
+        embed.add_field(name='Level', value=level, inline=True)
+        embed.add_field(name='\u200b', value='\u200b')
         embed.add_field(name='Phase 1 Health', value=phase1_health, inline=True)
         embed.add_field(name='Phase 3 Health', value=phase3_health, inline=True)
-        embed.add_field(name='Level', value=level, inline=True)
         embed.add_field(name='Defense', value=defense, inline=True)
+        embed.add_field(name='\u200b', value='\u200b')
         embed.add_field(name='Lowest Damage', value=lowest_damage, inline=True)
         embed.add_field(name='Highest Damage', value=highest_damage, inline=True)
         return embed
