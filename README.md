@@ -15,6 +15,10 @@
 * **Street** - Displays information about a specific street.
 
 ### Changelog
+* **1.0.0** (*22MAY*)
+  * We have gone remote! The bot is now hosted on a remote server and is running 24/7.
+  * There are no feature updates this change; I will be using this update to test the bot running remotely.
+  * I removed *update_log.py* just because it wasn't contributing to the actual bot functionality.  I'm still using it privately.
 * **0.7.0** (*21MAY*)
   * Bringing street data to the bot! `/street <street name>` provides information about a specific street.
   * Bringing playground data to the bot! `/playground <playground name>` provides information about a specific playground.
