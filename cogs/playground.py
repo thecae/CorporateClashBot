@@ -8,10 +8,6 @@ class Playground(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.Cog.listener()
-    async def on_ready(self):
-        print('* Playground Cog is ready.')
-
     @commands.command()
     async def playground(self, ctx, *, name):
         # check if playground is an abbreviation

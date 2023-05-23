@@ -7,10 +7,6 @@ class News(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.Cog.listener()
-    async def on_ready(self):
-        print('* News cog is online.')
-
     @commands.command()
     async def news(self, ctx):
         api_response = requests.get('https://corporateclash.net/api/v1/launcher/news').json()

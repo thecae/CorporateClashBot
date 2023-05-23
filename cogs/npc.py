@@ -7,10 +7,6 @@ class NPC(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.Cog.listener()
-    async def on_ready(self):
-        print('* NPC Cog is ready.')
-
     @commands.command()
     async def npc(self, ctx, *, name):
         # NPC Toons follow Title_Case

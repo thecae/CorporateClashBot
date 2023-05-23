@@ -7,10 +7,6 @@ class GameDetails(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.Cog.listener()
-    async def on_ready(self):
-        print('* GameDetails cog is online.')
-
     @commands.command()
     async def game(self, ctx):
         api_response = requests.get('https://corporateclash.net/api/v1/game_info.js').json()
