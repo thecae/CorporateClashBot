@@ -14,10 +14,6 @@ class Street(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.Cog.listener()
-    async def on_ready(self):
-        print('* Street Cog is ready.')
-
     @commands.command()
     async def street(self, ctx, *, name):
         try:
@@ -51,6 +47,7 @@ class Street(commands.Cog):
             embed.add_field(name='Lawbot Perc.', value=street_data['Percentages'][2], inline=True)
             embed.add_field(name='Bossbot Perc.', value=street_data['Percentages'][3], inline=True)
             embed.add_field(name='Boardbot Perc.', value=street_data['Percentages'][4], inline=True)
+            embed.add_field(name='\u200b', value='\u200b')
             embed.set_footer(text='Use [/playground <name>] to get information about a playground!')
             await ctx.send(embed=embed)
         except LookupError as e:

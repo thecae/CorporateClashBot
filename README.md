@@ -15,6 +15,10 @@
 * **Street** - Displays information about a specific street.
 
 ### Changelog
+* **1.1.0** (*23MAY*)
+  * Added `/hq` to get information about headquarters.  Not much information here, but might add some more in the future.
+  * Removed the `commands.on_ready()` function in each cog.  It's no longer necessary now that the CLI is remote.
+  * Fixed some alignment issues because of the newlines in embeds for `/cog` and `/street`.
 * **1.0.0** (*22MAY*)
   * We have gone remote! The bot is now hosted on a remote server and is running 24/7.
   * There are no feature updates this change; I will be using this update to test the bot running remotely.

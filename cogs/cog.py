@@ -77,6 +77,7 @@ def parse_cog(search_term):
         embed.add_field(name='\u200b', value='\u200b')
         embed.add_field(name='Lowest Dmg.', value=lowest_damage, inline=True)
         embed.add_field(name='Highest Dmg.', value=highest_damage, inline=True)
+        embed.add_field(name='\u200b', value='\u200b')
         return embed
     except AttributeError:
         raise AttributeError
@@ -111,6 +112,7 @@ def parse_mgr(search_term):
         embed.add_field(name='\u200b', value='\u200b')
         embed.add_field(name='Lowest Damage', value=lowest_damage, inline=True)
         embed.add_field(name='Highest Damage', value=highest_damage, inline=True)
+        embed.add_field(name='\u200b', value='\u200b')
         return embed
     except AttributeError:
         raise AttributeError
@@ -146,6 +148,7 @@ def parse_highroller():
         embed.add_field(name='\u200b', value='\u200b')
         embed.add_field(name='Lowest Damage', value=lowest_damage, inline=True)
         embed.add_field(name='Highest Damage', value=highest_damage, inline=True)
+        embed.add_field(name='\u200b', value='\u200b')
         return embed
     except AttributeError:
         raise AttributeError
@@ -154,10 +157,6 @@ def parse_highroller():
 class Cog(commands.Cog):
     def __init__(self, client):
         self.client = client
-
-    @commands.Cog.listener()
-    async def on_ready(self):
-        print('* Cog cog is online.')
 
     @commands.command()
     async def cog(self, ctx, *, search_term):

@@ -15,10 +15,6 @@ class Help(commands.Cog):
         self.client = client
         self.version, self.date = load_changelog()
 
-    @commands.Cog.listener()
-    async def on_ready(self):
-        print('* Help cog is online.')
-
     @commands.command()
     async def help(self, ctx):
         embed = discord.Embed(
@@ -60,6 +56,11 @@ class Help(commands.Cog):
         embed.add_field(
             name='/help',
             value='Returns this message',
+            inline=False
+        )
+        embed.add_field(
+            name='/hq',
+            value='Returns information about a specified HQ',
             inline=False
         )
         embed.add_field(
