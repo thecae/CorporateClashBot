@@ -6,6 +6,7 @@
 * **Cog** - Displays information about a specific cog.
 * **Districts** - Displays information about the online districts in the game.
 * **Game** - Displays information about the game, including whether the game is running and how many toons are online.
+* **HQ** - Displays information about headquarters in the game.
 * **Help** - Displays the help page for the bot with command descriptions
 * **Invasions** - Displays information about the active invasions in the game.
 * **News** - Displays the latest news from the TTCC website.
@@ -15,6 +16,10 @@
 * **Street** - Displays information about a specific street.
 
 ### Changelog
+* **1.2.0** (*26MAY*)
+  * Added `/department` command to get information about a department.
+  * Biggest drawback is that Discord embeds have a limit of 25 fields per embeds and lawbots have more than 25 types of cogs.  This probably will soon affect the other types when they receive their "overclocked" updates.
+  * Added aliases to some of the longer commands to make them easier.
 * **1.1.0** (*23MAY*)
   * Added `/hq` to get information about headquarters.  Not much information here, but might add some more in the future.
   * Removed the `commands.on_ready()` function in each cog.  It's no longer necessary now that the CLI is remote.

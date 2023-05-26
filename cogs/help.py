@@ -44,6 +44,11 @@ class Help(commands.Cog):
             inline=False
         )
         embed.add_field(
+            name='/department (/dept)',
+            value='Returns information about a department',
+            inline=False
+        )
+        embed.add_field(
             name='/districts',
             value='Returns online districts with population information',
             inline=False
@@ -59,8 +64,13 @@ class Help(commands.Cog):
             inline=False
         )
         embed.add_field(
-            name='/hq',
+            name='/headquarters (/hq)',
             value='Returns information about a specified HQ',
+            inline=False
+        )
+        embed.add_field(
+            name='/invasions (/inv)',
+            value='Returns a list of current invasions',
             inline=False
         )
         embed.add_field(
@@ -74,22 +84,17 @@ class Help(commands.Cog):
             inline=False
         )
         embed.add_field(
-            name='/invasions',
-            value='Returns a list of current invasions',
-            inline=False
-        )
-        embed.add_field(
             name='/ping',
             value='Returns the bot\'s latency',
             inline=False
         )
         embed.add_field(
-            name='/playground',
+            name='/playground (/pg)',
             value='Returns information about a specified playground',
             inline=False
         )
         embed.add_field(
-            name='/street',
+            name='/street (/st)',
             value='Returns information about a specified street',
             inline=False
         )

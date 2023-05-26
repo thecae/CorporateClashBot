@@ -7,8 +7,8 @@ class Headquarters(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command()
-    async def hq(self, ctx, *, name):
+    @commands.command(aliases=['hq'])
+    async def headquarters(self, ctx, *, name):
         # make the request
         url_term = name.title().replace(' ', '_')
         url = f'https://toontown-corporate-clash.fandom.com/wiki/{url_term}_Headquarters'

@@ -8,7 +8,7 @@ class Playground(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command()
+    @commands.command(aliases=['pg'])
     async def playground(self, ctx, *, name):
         # check if playground is an abbreviation
         if len(name) < 5:

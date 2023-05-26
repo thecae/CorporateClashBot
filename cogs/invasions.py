@@ -8,7 +8,7 @@ class Invasions(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command()
+    @commands.command(aliases=['inv'])
     async def invasions(self, ctx, *, search_term=None):
         api_response = requests.get('https://corporateclash.net/api/v1/districts.js').json()
         api_response = sorted(api_response, key=lambda k: k['name'])

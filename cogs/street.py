@@ -14,7 +14,7 @@ class Street(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command()
+    @commands.command(aliases=['st'])
     async def street(self, ctx, *, name):
         try:
             # load street data
