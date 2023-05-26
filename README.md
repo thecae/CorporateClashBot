@@ -4,6 +4,7 @@
 ### Current Feature Set
 * **About** - Displays the about page for the bot
 * **Cog** - Displays information about a specific cog.
+* **Department** - Displays information about a specific department.
 * **Districts** - Displays information about the online districts in the game.
 * **Game** - Displays information about the game, including whether the game is running and how many toons are online.
 * **HQ** - Displays information about headquarters in the game.
@@ -11,11 +12,15 @@
 * **Invasions** - Displays information about the active invasions in the game.
 * **News** - Displays the latest news from the TTCC website.
 * **NPC** - Displays information about a specific NPC.
+* **Percentages** - Displays the percentages of each cog in the game.
 * **Ping** - Allows users to ping the bot and receive the bot's latency in milliseconds.
 * **Playground** - Displays information about a specific playground.
 * **Street** - Displays information about a specific street.
 
 ### Changelog
+* **1.3.0** (*26MAY*)
+  * Added `/percentages` to get a list of street percentages for a department.  Streets are sorted from highest to lowest percentages.
+  * Suggestion provided by Cones (*FORBO#7686*)
 * **1.2.0** (*26MAY*)
   * Added `/department` command to get information about a department.
   * Biggest drawback is that Discord embeds have a limit of 25 fields per embeds and lawbots have more than 25 types of cogs.  This probably will soon affect the other types when they receive their "overclocked" updates.

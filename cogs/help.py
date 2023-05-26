@@ -84,6 +84,11 @@ class Help(commands.Cog):
             inline=False
         )
         embed.add_field(
+            name='/percentages (/p)',
+            value='Returns street percentages for a department',
+            inline=False
+        )
+        embed.add_field(
             name='/ping',
             value='Returns the bot\'s latency',
             inline=False
