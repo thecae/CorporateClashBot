@@ -58,21 +58,21 @@ class BestStreet(commands.Cog):
     @commands.command(aliases=['p'])
     async def percentages(self, ctx, *, dept):
         if dept.title() in ['Sellbot', "Sellbots"]:
-            await ctx.send(embed=process('Sellbot', 0))
+            await ctx.reply(embed=process('Sellbot', 0), mention_author=False)
         elif dept.title() in ['Cashbot', "Cashbots"]:
-            await ctx.send(embed=process('Cashbot', 1))
+            await ctx.reply(embed=process('Cashbot', 1), mention_author=False)
         elif dept.title() in ['Lawbot', "Lawbots"]:
-            await ctx.send(embed=process('Lawbot', 2))
+            await ctx.reply(embed=process('Lawbot', 2), mention_author=False)
         elif dept.title() in ['Bossbot', "Bossbots"]:
-            await ctx.send(embed=process('Bossbot', 3))
+            await ctx.reply(embed=process('Bossbot', 3), mention_author=False)
         elif dept.title() in ['Boardbot', "Boardbots"]:
-            await ctx.send(embed=process('Boardbot', 4))
+            await ctx.reply(embed=process('Boardbot', 4), mention_author=False)
         else:
-            await ctx.send(embed=discord.Embed(
+            await ctx.reply(embed=discord.Embed(
                 title='Department Not Found',
                 description=f'Department **{dept.title()}** was not found.',
                 color=discord.Color.red()
-            ))
+            ), mention_author=False)
 
 
 async def setup(client):

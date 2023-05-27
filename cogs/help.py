@@ -15,7 +15,7 @@ class Help(commands.Cog):
         self.client = client
         self.version, self.date = load_changelog()
 
-    @commands.command()
+    @commands.command(aliases=['h'])
     async def help(self, ctx):
         embed = discord.Embed(
             title='Help',
@@ -103,7 +103,7 @@ class Help(commands.Cog):
             value='Returns information about a specified street',
             inline=False
         )
-        await ctx.send(embed=embed)
+        await ctx.reply(embed=embed, mention_author=False)
 
 
 async def setup(client):

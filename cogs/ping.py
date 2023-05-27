@@ -7,7 +7,7 @@ class Ping(commands.Cog):
 
     @commands.command()
     async def ping(self, ctx):
-        await ctx.send('Bounceback time: {0}ms'.format(round(self.client.latency, 2) * 100))
+        await ctx.reply('Bounceback time: {0}ms'.format(round(self.client.latency, 2) * 100), mention_author=False)
 
 
 async def setup(client):

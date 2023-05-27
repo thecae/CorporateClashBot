@@ -42,7 +42,7 @@ class Invasions(commands.Cog):
                     inline=False
                 )
         embed.set_footer(text=f'Queried at {datetime.now().strftime("%H:%M:%S")}.')
-        await ctx.send(embed=embed)
+        await ctx.reply(embed=embed, mention_author=False)
 
 
 async def setup(client):

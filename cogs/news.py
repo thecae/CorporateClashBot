@@ -28,7 +28,7 @@ class News(commands.Cog):
                 inline=False
             )
 
-        await ctx.send(embed=embed)
+        await ctx.reply(embed=embed, mention_author=False)
 
 
 async def setup(client):

@@ -36,13 +36,13 @@ class NPC(commands.Cog):
             embed.add_field(name='Building', value=building, inline=True)
             embed.add_field(name='Street', value=street, inline=True)
             embed.add_field(name='Playground', value=playground, inline=True)
-            await ctx.send(embed=embed)
+            await ctx.reply(embed=embed, mention_author=False)
         except (AttributeError, TypeError):
-            await ctx.send(embed=discord.Embed(
+            await ctx.reply(embed=discord.Embed(
                 title='NPC Not Found',
                 description=f'NPC **{name.title()}** was not found.',
                 color=discord.Color.red()
-            ))
+            ), mention_author=False)
 
 
 async def setup(client):

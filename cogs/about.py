@@ -29,7 +29,7 @@ class AboutMe(commands.Cog):
         embed.add_field(name='Need help?', value='Type `/help` for assistance!', inline=True)
         embed.add_field(name='List of Commands', value='* cog\n* department\n* districts\n* game\n* headquarters\n* invasions\n* news\n* npc\n* percentages\n* ping\n* playground\n* street', inline=False)
 
-        await ctx.send(embed=embed)
+        await ctx.reply(embed=embed, mention_author=False)
 
 
 async def setup(client):

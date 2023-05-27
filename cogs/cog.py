@@ -163,21 +163,21 @@ class Cog(commands.Cog):
         # try parsing it as a manager first
         try:
             embed = parse_mgr(search_term)
-            await ctx.send(embed=embed)
+            await ctx.reply(embed=embed, mention_author=False)
             return
         except AttributeError:
             pass
         # try parsing it as a boss
         try:
             embed = parse_boss(search_term)
-            await ctx.send(embed=embed)
+            await ctx.reply(embed=embed, mention_author=False)
             return
         except (LookupError, AttributeError):
             pass
         # try parsing it as a cog
         try:
             embed = parse_cog(search_term)
-            await ctx.send(embed=embed)
+            await ctx.reply(embed=embed, mention_author=False)
             return
         except AttributeError:
             pass
@@ -185,17 +185,17 @@ class Cog(commands.Cog):
         if search_term.lower() == 'high roller':
             try:
                 embed = parse_highroller()
-                await ctx.send(embed=embed)
+                await ctx.reply(embed=embed, mention_author=False)
                 return
             except AttributeError:
                 pass
 
         # if it's not any of these, then it's not a valid cog
-        await ctx.send(embed=discord.Embed(
+        await ctx.reply(embed=discord.Embed(
             title='Error',
             description=f'**{search_term}** is not a valid cog.',
             color=discord.Color.red()
-        ))
+        ), mention_author=False)
 
 
 async def setup(client):

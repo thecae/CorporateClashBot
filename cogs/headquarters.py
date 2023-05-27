@@ -41,13 +41,13 @@ class Headquarters(commands.Cog):
             embed.add_field(name='Min Level', value=min_level, inline=True)
             embed.add_field(name='Max Level', value=max_level, inline=True)
             embed.add_field(name='\u200b', value='\u200b')
-            await ctx.send(embed=embed)
+            await ctx.reply(embed=embed, mention_author=False)
         except (AttributeError, TypeError):
-            await ctx.send(embed=discord.Embed(
+            await ctx.reply(embed=discord.Embed(
                 title='Headquarters Not Found',
                 description=f'Headquarters **{name.title()}** was not found.',
                 color=discord.Color.red()
-            ))
+            ), mention_author=False)
 
 
 async def setup(client):

@@ -18,6 +18,9 @@
 * **Street** - Displays information about a specific street.
 
 ### Changelog
+* **1.3.1** (*27MAY*)
+  * Reply to messages rather than just sending a message. Just makes it easier to see what command resulted in that output.
+  * Future updates will hopefully figure out how to delete the original message and still hold onto the reply to avoid the crowding of the chat.
 * **1.3.0** (*26MAY*)
   * Added `/percentages` to get a list of street percentages for a department.  Streets are sorted from highest to lowest percentages.
   * Suggestion provided by Cones (*FORBO#7686*)

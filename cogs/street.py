@@ -49,9 +49,9 @@ class Street(commands.Cog):
             embed.add_field(name='Boardbot Perc.', value=street_data['Percentages'][4], inline=True)
             embed.add_field(name='\u200b', value='\u200b')
             embed.set_footer(text='Use [/playground <name>] to get information about a playground!')
-            await ctx.send(embed=embed)
+            await ctx.reply(embed=embed, mention_author=False)
         except LookupError as e:
-            await ctx.send(embed=discord.Embed(title='Error', description=str(e), color=0xff0000))
+            await ctx.reply(embed=discord.Embed(title='Error', description=str(e), color=0xff0000), mention_author=False)
             return
 
 

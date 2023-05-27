@@ -58,7 +58,7 @@ class Playground(commands.Cog):
         except (AttributeError, TypeError):
             embed = discord.Embed(title='Error', description=f'{name.title()} is not a valid playground.', color=0xff0000)
 
-        await ctx.send(embed=embed)
+        await ctx.reply(embed=embed, mention_author=False)
 
 async def setup(client):
     await client.add_cog(Playground(client))

@@ -69,13 +69,13 @@ class Department(commands.Cog):
                     inline=False
                 )
 
-            await ctx.send(embed=embed)
+            await ctx.reply(embed=embed, mention_author=False)
         except (AttributeError, TypeError):
-            await ctx.send(embed=discord.Embed(
+            await ctx.reply(embed=discord.Embed(
                 title='Department Not Found',
                 description=f'Department **{name.title()}** was not found.',
                 color=discord.Color.red()
-            ))
+            ), mention_author=False)
 
 
 
