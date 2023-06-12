@@ -18,6 +18,10 @@
 * **Street** - Displays information about a specific street.
 
 ### Changelog
+* **1.4.0** (*12JUN*)
+  * No super big updates this time around, haven't had much time to think of an implement big changes!
+  * Running through the game, I realized I wanted to be able to run the percentages by playground.  Thus, `/p bossbots ttc` will filter only for ToonTown Central!
+  * Minor bug when writing out `/p bossbots toontown central`, fix coming soon!
 * **1.3.1** (*27MAY*)
   * Reply to messages rather than just sending a message. Just makes it easier to see what command resulted in that output.
   * Future updates will hopefully figure out how to delete the original message and still hold onto the reply to avoid the crowding of the chat.

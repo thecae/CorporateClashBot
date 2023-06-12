@@ -16,11 +16,19 @@ def get_icon(dept):
 
     return page.find('img', {'alt': f'{dept.title()}emblem'})['src']
 
-def process(name, index):
+def process(name, index, playground=None):
     percentages = {}
     for street in load_streets():
+        print(street)
         for key, values in street.items():
-            percentages[key] = values['Percentages'][index]
+            if playground is None:
+                percentages[key] = values['Percentages'][index]
+            else:
+                if playground in values['Playground']:
+                    percentages[key] = values['Percentages'][index]
+
+    print()
+    print(percentages)
 
     # get the icon
     icon = get_icon(name)
@@ -38,9 +46,11 @@ def process(name, index):
         if value == '05%':
             percentages[key] = '5%'
 
+    title = f'{name}s' if playground is None else f'{name}s in {playground.upper()}'
+
     # build the embed
     embed = discord.Embed(
-        title=f'{name}s',
+        title=title,
         color=discord.Color.blue()
     )
     embed.set_thumbnail(url=icon)
@@ -57,16 +67,23 @@ class BestStreet(commands.Cog):
 
     @commands.command(aliases=['p'])
     async def percentages(self, ctx, *, dept):
+        ## get the playground
+        if dept.__contains__(' '):
+            dept, playground = dept.split(' ')
+        else:
+            playground = None
+
+        ## run the process to get the percentages
         if dept.title() in ['Sellbot', "Sellbots"]:
-            await ctx.reply(embed=process('Sellbot', 0), mention_author=False)
+            await ctx.reply(embed=process('Sellbot', 0, playground), mention_author=False)
         elif dept.title() in ['Cashbot', "Cashbots"]:
-            await ctx.reply(embed=process('Cashbot', 1), mention_author=False)
+            await ctx.reply(embed=process('Cashbot', 1, playground), mention_author=False)
         elif dept.title() in ['Lawbot', "Lawbots"]:
-            await ctx.reply(embed=process('Lawbot', 2), mention_author=False)
+            await ctx.reply(embed=process('Lawbot', 2, playground), mention_author=False)
         elif dept.title() in ['Bossbot', "Bossbots"]:
-            await ctx.reply(embed=process('Bossbot', 3), mention_author=False)
+            await ctx.reply(embed=process('Bossbot', 3, playground), mention_author=False)
         elif dept.title() in ['Boardbot', "Boardbots"]:
-            await ctx.reply(embed=process('Boardbot', 4), mention_author=False)
+            await ctx.reply(embed=process('Boardbot', 4, playground), mention_author=False)
         else:
             await ctx.reply(embed=discord.Embed(
                 title='Department Not Found',
